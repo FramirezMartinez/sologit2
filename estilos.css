@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(font/Poppins-Regular.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    text-align: justify;
+    font-size: 1em;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+samp {
+    color: #136100;
+}
+
+.lista-indice {
+    padding: 5px;
+}
+
+.cuerpo {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.presentacion {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.presentacion img {
+    width: 450px;
+    display: inline-block;
+}
+
+.presentacion h1 {
+    font-size: 3em;
+}
+
+.cont {
+    margin:10px;
+    margin-top: 30px;
+}
+
+.cont-quees {
+    text-align: center;
+}
+
+.cont-quees img {
+    height: 350px;
+    display: inline-block;
+}
+
+.cont-estados {
+    text-align: center;
+}
+
+.cont-estados img {
+    height: 300px;
+    display: inline-block;
+}
+
+.list-elements {
+    margin-left: 20px;
+}
+
+.element {
+    color: #25ad03;
+}
+
+.element:nth-child(4){
+    color: #666;
+}
+
+.cont-cols {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.cont-col {
+    width: 30%;
+    margin: 10px 10px;
+    float: left;
+}
+
+.cont-init {
+    clear: both;
+}
+
+.cont-col-2 img {
+    width: 95%;
+}
+
+.cont-col-2 li {
+    font-size: .9em;
+    color: #bfbfbf;
+}
+
+.cont-cols-2 {
+    width: 100%;
+}
+
+.cont-col-2 {
+    width: 50%;
+    padding: 10px;
+    float: left;
+}
+
+.cont-terminal {
+    padding: 10px;
+    background: #000;
+    border-radius: 5px;
+}
+
+.cont {
+    clear: both;
+}
