@@ -140,3 +140,9 @@ samp {
 .cont {
     clear: both;
 }
+
+/*color al texto de la ruta*/
+#texto
+{
+    color: bisque;
+}
