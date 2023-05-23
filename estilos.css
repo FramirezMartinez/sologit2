@@ -151,11 +151,11 @@ samp {
 .cont-terminal1 {
     margin-top:15px;
     padding:15px;
-    width: 500px;
+    width: 480px;
     background: #000;
     border-radius: 5px;
 }
-div, .cont-img
+div .cont-img
 {
     margin-top:-80px;
     float: right;
