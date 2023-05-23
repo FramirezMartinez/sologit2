@@ -5,22 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
 </head>
 <body class="cuerpo">
     <div class="presentacion">
         <img src="img/git.png">
         <h1>Controlador de versiones</h1>
     </div>
-    <div class="cont-quees">
+    
+   <div class="accordion">
+
+    
         <a name="quees"></a>
-        <h3 name="quees">¿Que es Git?</h3>    
+        <div class="accordion-item">
+          <div class="accordion-header">Qué es git
+    
+          </div>
+  
+          
+          <div class="accordion-content">
+    <h3 name="quees">¿Que es Git?</h3>   
+    <div class="cont-quees">
+        
         <p class="text-quees">Git es un sistema de control de versiones el cual administra los archivos de manera más eficiente. Imagina que vas a realizar cambios en tu proyecto pero por alguna o circuntancia tu proyecto falla entonces como vuelves a, ¿cuando tu proyecto funcionaba?</p>
         <p>Entonces ahi es donde entra Git ya que nos ayuda a tener un mejor control sobre nuestro proyecto diviendolo en partes para que tengamos una version en los cambios que hayamos echo, para ello preparamos los archivos y confirmamos ya que todo este bien.</p>
         <img src="img/ilustraciones/ilustracion.png">
+     </div>
+  </div>
+</div>
+      
+<div class="accordion-item">
+    <a name="estados"></a>
+    <div class="accordion-header">Estados de git
     </div>
+
+    <div class="accordion-content">
     <div class="cont cont-estados">
-        <a name="estados"></a>
-        <h3>Estados de Git</h3> 
+        
+         
         <p><b>La estructura de git</b> el directorio de trabajo una parte importante de Git, ya que se copia cuando clonas un repositorio esto pasa en el momento que haces un commit. 
         <br>
         El área de preparación es un archivo, generalmente contenido en tu directorio de Git, que almacena información acerca de lo que va a ir en tu próxima confirmación</p>
@@ -39,56 +62,70 @@
         </div>
         <img src="img/codigos/estadosDeGit.png">
     </div>
-    <div class="cont cont-recursos">
-        <a name="recursos"></a>
-        <h3>Recursos</h3>
-        <p>Antes de comenzar a utilizar git se necesitan los elementos basicos para: </p>
-        <ul class="list-elements">
-            <li class="element">Tener instalado una version estable de Git</li>
-            <li class="element">Una carpeta donde sepa su ubicacion</li>
-            <li class="element">La terminar de Git Bash o la normal</li>
-            <li class="element"><b>En el caso de tener Visual Studio Code tambien se puede usar la terminal nos proporciona</b></li>
-        </ul>
-        <p>
-            Posteriormente se deve crear una cuenta en GitHub para que tus proyectos puedan estar en la nube, ya que en este proyecto se busca comprender los estados de git y como beneficianos de ellos.
-            <br> <br>
-            Dicho lo anterior entonces comenzamos creando una carpeta en nuestra computadora:
-        </p>
-        <br>
-        <img src="img/codigos/ubicacion.png">
-        <br><br>
-        <p>Abrimos nuestra carpeta de nuestro proyecto y creamos nuestros primeros archivos </p>
-        <br>
-        <img src="img/codigos/archivos.png">
-        <br><br>
-        <p>Ya que se a creado el proyecto y un par de archivos nos dirigimos a "Git Bash" ubicandonos en la carpeta del proyecto dandole comienzo a nuestro control de versiones con <b>git init</b></p>
-    </div>
+</div>
+</div>
 
-    <div class="cont cont-init">
-        <a name="gitInit"></a>
+
+<div class="accordion-item">
+    <a name="recursos"></a>
+    <div class="accordion-header">Recursos</div>
+    <div class="accordion-content">
+      <div class="cont cont-recursos">
+        <h3>Recursos</h3>
+        <p>Antes de comenzar a utilizar Git se necesitan los elementos básicos:</p>
+        <ul class="list-elements">
+          <li class="element">Tener instalada una versión estable de Git</li>
+          <li class="element">Conocer la ubicación de la carpeta</li>
+          <li class="element">Utilizar la terminal de Git Bash o la terminal normal</li>
+          <li class="element"><b>En caso de usar Visual Studio Code, también se puede usar la terminal integrada</b></li>
+        </ul>
+        <p>Luego, debes crear una cuenta en GitHub para poder almacenar tus proyectos en la nube. En este proyecto, se busca comprender los estados de Git y cómo nos benefician.</p>
+        <br>
+        <img src="img/codigos/ubicacion.png" alt="Ubicación de la carpeta">
+        <br><br>
+        <p>Abre la carpeta de tu proyecto y crea los primeros archivos.</p>
+        <br>
+        <img src="img/codigos/archivos.png" alt="Creación de archivos">
+        <br><br>
+        <p>Una vez que hayas creado el proyecto y algunos archivos, abre "Git Bash" y navega hasta la carpeta del proyecto para iniciar el control de versiones con <b>git init</b>.</p>
+      </div>
+    </div>
+  </div>
+  
+
+
+<div class="accordion-item">
+    <a name="gitInit"></a>
+    <div class="accordion-header">git init</div>
+    <div class="accordion-content">
+      <div class="cont cont-init">
         <h3>git init</h3>
         <div class="cont-cols-2">
-            <div class="cont-col-2">
-                <img src="img/codigos/git-init.png">
-            </div>
-            <div class="cont-col-2">
-                <p>Ejecutanmos los siguientes codigos en nuestra terminal de <b>git bash</b></p>
-                <br>
-                <ul class="cont-terminal">
-                    <li>$ cd &#x3Cruta_de_proyecto&#x3E <samp>// Nos dirigimos en donde este nuestro proyecto</samp></li>
-                    <li>$ ls -l -a <samp>// Esto funciona para ver los archivos en modo de lista y muestra hasta los que no se pueden ver</samp></li>
-                    <li>$ git init <samp>// Iniciamos git</samp></li>
-                </ul>
-                <br>
-                <p>El comando "ls -l -a" lo usamos para ver los cambios que van surguiendo en nuestro proyecto</p>
-                <p>Con esto podemos ver como es nuestro archivo inicia con los servicios de <b>git</b> ya que se agrego una nueva carpeta en la cual se estaran almacenando las confirmaciones (commits) que vayamos realizando </p>
-            </div>
+          <div class="cont-col-2">
+            <img src="img/codigos/git-init.png" alt="Ejecución de git init">
+          </div>
+          <div class="cont-col-2">
+            <p>Ejecuta los siguientes comandos en la terminal de Git Bash:</p>
+            <ul class="cont-terminal">
+              <li>$ cd &#x3Cruta_de_proyecto&#x3E <samp>// Navega hasta la carpeta de tu proyecto</samp></li>
+              <li>$ ls -l -a <samp>// Muestra los archivos en modo de lista, incluyendo los ocultos</samp></li>
+              <li>$ git init <samp>// Inicializa Git en tu proyecto</samp></li>
+            </ul>
+            <p>El comando `ls -l -a` se utiliza para ver los cambios que van ocurriendo en tu proyecto. Verás que se crea una nueva carpeta oculta llamada `.git`, que almacenará las confirmaciones (commits) que realices en tu proyecto.</p>
+          </div>
         </div>
-
+      </div>
     </div>
+  </div>
+  
+
+
+
+
     <div class="cont cont-status">
-        <a name="gitStatus"></a>
+    
         <h3>git status</h3>
+        
         <div class="cont-cols-2">
             <div class="cont-col-2">
                 <p>
@@ -101,11 +138,15 @@
             </div>
         </div>
     </div>
+  
+
+  
+  
     <div class="cont cont-config">
         <a name="gitEmail"></a>
        
-        <p>Primero veremos para solo el repositorio actual. Los siguientes comandos van de la mano ya que estos nos ayudan a saber quien fue el que creo la confirmacion <b>git config  user.email</b>  y <b> git config  user.name</b> (commit)</p>
-        <div class="cont-cols-2">
+            <p>Primero veremos para solo el repositorio actual. Los siguientes comandos van de la mano ya que estos nos ayudan a saber quien fue el que creo la confirmacion <b>git config  user.email</b>  y <b> git config  user.name</b> (commit)</p>
+         <div class="cont-cols-2">
                 <p><b>Sintaxis:</b> git config --global user.email "correo_electronico"</p>    
                 <br>            
                 <p>Para configurar solo al repositorio actual en el que te encuentras puedes utilizar el siguiente comando para el correo, deja una imagen  <b>git config user.email </b></p>
@@ -113,7 +154,7 @@
             <br>
                 <center><img src="img/codigos/Correo.png" height="60"  width="900"></center>
             
-        </div>
+         </div>
 
         <div class="cont-cols-2">
             <a name="gitName"></a>
@@ -129,8 +170,8 @@
                 <br>
                 <center><img src="img/codigos/NC.png" height="650"  width="1000"></center>
       
+        </div>
     </div>
-
     <div class="cont cont-config">
         <a name="gitEmail2"></a>
        
@@ -157,6 +198,7 @@
            
             
         
+    </div>
     </div>
 
     <div class="cont cont-commit">
@@ -414,5 +456,13 @@
     
         </a>
     </div>
+</div>
+    <script src="js/acordion.js"></script>
+    <script>
+        function toggleAccordion(contentId) {
+          const accordionContent = document.getElementById(contentId);
+          accordionContent.style.display = accordionContent.style.display === "block" ? "none" : "block";
+        }
+      </script>
 </body>
 </html>
