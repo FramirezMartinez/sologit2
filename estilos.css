@@ -142,7 +142,7 @@ samp {
 }
 
 /*color al texto de la ruta*/
-#texto
+#texto1
 {
     color: bisque;
 }
@@ -159,6 +159,11 @@ div .cont-img
 {
     margin-top:-80px;
     float: right;
-    
-    
+}
+div .cont-img2
+{
+    margin-top: -100px;
+    margin-right:-100px;
+    float: right;
+     
 }

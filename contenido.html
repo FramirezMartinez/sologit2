@@ -282,7 +282,7 @@
             <p>Se utiliza para eliminar archivos del repositorio y del sistema de archivos local al mismo tiempo. Aspi que ten mucho cuidado antes de eliminar un archivo</p>
       
             <ul class="cont-terminal1">
-                <li id="texto" ><b>Sintaxis: </b> 	 git rm &lt;nombre del archivo	&gt;   <samp> //Elimina los archivos existentes en tu repositorio local </samp></li>
+                <li id="texto1" ><b>Sintaxis: </b> 	 git rm &lt;nombre del archivo	&gt;   <samp> //Elimina los archivos existentes en tu repositorio local </samp></li>
                
             </ul>
             
@@ -291,30 +291,124 @@
             </div>
             <br>
             
+            
+            
+                <p >Un dato muy interesante una vez utilizado el comnado git rm necesario agregar un commit en el repositorio </p>
+                <br>
+            
+             
+            
+               <center><img src="img/codigos/git commitRM.png"> </center>
+            
+             <br>
+
             <ul class="cont-terminal1">
-                <li id="texto" ><b>Sintaxis: </b> 	 git rm  &lt;nombre del archivo 1&gt;  &lt;nombre del archivo 2&gt;  <samp> //Elimina los archivos existentes en tu repositorio local </samp></li>
+                <li id="texto1" ><b>Sintaxis: </b> 	 git rm  &lt;nombre del archivo 1&gt;  &lt;nombre del archivo 2&gt;  <samp> //Elimina los archivos existentes en tu repositorio local </samp></li>
                
             </ul>
             
-            <div class="cont-img">
-                <img src="img/codigos/git rm2.png">
+            
+            <div class="cont-img2">
+                <img src="img/codigos/git  rm2.png">
             </div>
             <br>
+            
         </a>
     </div>
-    <div class="cont cont-pull">
-        <a name="gitPull">
-            <h3>git pull</h3>
-        </a>
-    </div>
+    
     <div class="cont cont-switch">
         <a name="gitSwitch">
             <h3>git switch</h3>
+            <p>Se utiliza en Git para cambiar entre ramas o crear y cambiar a una nueva rama en un repositorio</p>
+       
+       
+            <br>
+            <ul class="cont-terminal1">
+                <li id="texto1" ><b>Sintaxis: </b> 	 git switch -c &lt;nombre rama&gt;  <samp> //Crea una nueva rama  en tu repositorio local  </samp></li>
+               
+            </ul>
+            
+            
+            <div class="cont-img2">
+                <img src="img/codigos/git switch.png">
+            </div>
+            <br>
+       
+            <br>
+            <ul class="cont-terminal1">
+                <li id="texto1" ><b>Sintaxis: </b> 	 git switch  &lt;nombre rama&gt;  <samp> //Cambia a una rama existente en tu repositorio local  </samp></li>
+               
+            </ul>
+            
+            
+            <div class="cont-img2">
+                <img src="img/codigos/git switch2.png">
+            </div>
+            <br>
         </a>
     </div>
     <div class="cont cont-remote">
         <a name="gitRemote">
             <h3>git remote</h3>
+            <p>
+                Para agregar un nuevo repositorio remoto a tu repositorio local 
+            </p>
+
+            <br>
+            <ul class="cont-terminal1">
+                <li id="texto1" ><b>Sintaxis: </b> git remote add
+                 <nombre-remoto> &lt;URL-repositorio-remoto&gt; &lt;/URL-repositorio-remoto&gt;  
+                 <samp> //creas un repositorio remoto , para eso ya tienes que tener una cuenta GitHub. Dejo la dirección por si no tienes cuenta github.com</samp></li>
+               
+            </ul>
+            
+            
+              <br> 
+              <img src="img/codigos/remoto.png">
+              <br>
+        </a>
+    </div>
+    <div class="cont cont-push">
+        <a name="gitPush">
+            <h3>git push</h3>
+            <p>utilizado en Git para enviar tus cambios locales a un repositorio remoto. 
+                Este comando se utiliza normalmente después de realizar cambios en tu repositorio local
+                y deseas actualizar el repositorio remoto con tus cambios.
+            </p>
+
+            <ul class="cont-terminal1">
+                <li id="texto1" ><b>Sintaxis: </b> git push &lt;nombre-remoto &gt; &lt;nombre-rama &gt;
+                   
+                 <samp> //Donde &lt; nombre-remoto &gt; es el nombre del repositorio remoto al que deseas enviar tus cambios, y &lt; nombre-rama &gt; es el nombre de la rama en la que deseas realizar el push.</samp></li>
+               
+            </ul>
+
+            <br> 
+              <img src="img/codigos/git push.png">
+              <br>
+
+        </a>
+    </div>
+
+    <div class="cont cont-pull">
+        <a name="gitPull">
+            <h3>git pull</h3>
+            <p>
+              se utiliza en Git para recuperar los cambios más recientes desde un repositorio remoto y
+              fusionarlos con la rama actual en tu repositorio local.
+            </p>
+
+            <ul class="cont-terminal1">
+                <li id="texto1" ><b>Sintaxis: </b> git pull &lt; nombre-remoto &gt; &lt;nombre-rama &gt;
+                   
+                 <samp> //Donde &lt;nombre-remoto &gt; es el nombre del repositorio remoto desde el cual deseas obtener los cambios, y &lt; nombre-rama&gt;  es el nombre de la rama remota que deseas fusionar con la rama actual en tu repositorio local. </samp></li>
+               
+            </ul>
+
+            <br> 
+              <img src="img/codigos/git pull.png">
+              <br>
+    
         </a>
     </div>
 </body>
