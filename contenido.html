@@ -5,365 +5,605 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
 </head>
 <body class="cuerpo">
     <div class="presentacion">
         <img src="img/git.png">
         <h1>Controlador de versiones</h1>
     </div>
-    <div class="cont-quees">
+    
+    <div class="accordion">
         <a name="quees"></a>
-        <h3 name="quees">¿Que es Git?</h3>    
-        <p class="text-quees">Git es un sistema de control de versiones el cual administra los archivos de manera más eficiente. Imagina que vas a realizar cambios en tu proyecto pero por alguna o circuntancia tu proyecto falla entonces como vuelves a, ¿cuando tu proyecto funcionaba?</p>
-        <p>Entonces ahi es donde entra Git ya que nos ayuda a tener un mejor control sobre nuestro proyecto diviendolo en partes para que tengamos una version en los cambios que hayamos echo, para ello preparamos los archivos y confirmamos ya que todo este bien.</p>
-        <img src="img/ilustraciones/ilustracion.png">
-    </div>
-    <div class="cont cont-estados">
+        <div class="accordion-item">
+            <div class="accordion-header"> Qué es git
+            </div>
+            <div class="accordion-content">
+                <h3 name="quees">¿Que es Git?</h3>   
+                <div class="cont-quees">
+                    <p class="text-quees">Git es un sistema de control de versiones el cual administra los archivos de manera más eficiente. Imagina que vas a realizar cambios en tu proyecto pero por alguna o circuntancia tu proyecto falla entonces como vuelves a, ¿cuando tu proyecto funcionaba?</p>
+                    <p>Entonces ahi es donde entra Git ya que nos ayuda a tener un mejor control sobre nuestro proyecto diviendolo en partes para que tengamos una version en los cambios que hayamos echo, para ello preparamos los archivos y confirmamos ya que todo este bien.</p>
+                    <img src="img/ilustraciones/ilustracion.png">
+                </div>
+            </div>
+        </div>
+
         <a name="estados"></a>
-        <h3>Estados de Git</h3> 
-        <p><b>La estructura de git</b> el directorio de trabajo una parte importante de Git, ya que se copia cuando clonas un repositorio esto pasa en el momento que haces un commit. 
-        <br>
-        El área de preparación es un archivo, generalmente contenido en tu directorio de Git, que almacena información acerca de lo que va a ir en tu próxima confirmación</p>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                Estados de git
+            </div>
+            <div class="accordion-content">
+                <div class="cont cont-estados"> 
+                    <p><b>La estructura de git</b> el directorio de trabajo una parte importante de Git, ya que se copia cuando clonas un repositorio esto pasa en el momento que haces un commit. 
+                    <br>
+                    El área de preparación es un archivo, generalmente contenido en tu directorio de Git, que almacena información acerca de lo que va a ir en tu próxima confirmación</p>
 
-        <div class="cont-cols">
-            <p><b>El flujo de trabajo con Git</b></p>
-            <div class="cont-col">
-                <b>Modificas:</b> esto lo haces al momento de agregar mas codigo a tu proyecto o actulizar alguna parte de codigo. 
-            </div>
-            <div class="cont-col">
-                <b>Preparas:</b> los archivos, añadiéndolos a tu área de preparación(staging area).
-            </div>
-            <div class="cont-col">
-                <b>Confirmas:</b> esto lo haces con commit que esto hace que tengas una copia de proyecto y puedes tener las copias que quieras (el commit se almacena localmente).
+                    <div class="cont-cols">
+                        <p><b>El flujo de trabajo con Git</b></p>
+                        <div class="cont-col">
+                        <b>Modificas:</b> esto lo haces al momento de agregar mas codigo a tu proyecto o actulizar alguna parte de codigo. 
+                    </div>
+
+                    <div class="cont-col">
+                        <b>Preparas:</b> los archivos, añadiéndolos a tu área de preparación(staging area).
+                    </div>
+
+                    <div class="cont-col">
+                        <b>Confirmas:</b> esto lo haces con commit que esto hace que tengas una copia de proyecto y puedes tener las copias que quieras (el commit se almacena localmente).
+                    </div>
+                </div>
+            <img src="img/codigos/estadosDeGit.png">
+        </div>
             </div>
         </div>
-        <img src="img/codigos/estadosDeGit.png">
-    </div>
-    <div class="cont cont-recursos">
+
         <a name="recursos"></a>
-        <h3>Recursos</h3>
-        <p>Antes de comenzar a utilizar git se necesitan los elementos basicos para: </p>
-        <ul class="list-elements">
-            <li class="element">Tener instalado una version estable de Git</li>
-            <li class="element">Una carpeta donde sepa su ubicacion</li>
-            <li class="element">La terminar de Git Bash o la normal</li>
-            <li class="element"><b>En el caso de tener Visual Studio Code tambien se puede usar la terminal nos proporciona</b></li>
-        </ul>
-        <p>
-            Posteriormente se deve crear una cuenta en GitHub para que tus proyectos puedan estar en la nube, ya que en este proyecto se busca comprender los estados de git y como beneficianos de ellos.
-            <br> <br>
-            Dicho lo anterior entonces comenzamos creando una carpeta en nuestra computadora:
-        </p>
-        <br>
-        <img src="img/codigos/ubicacion.png">
-        <br><br>
-        <p>Abrimos nuestra carpeta de nuestro proyecto y creamos nuestros primeros archivos </p>
-        <br>
-        <img src="img/codigos/archivos.png">
-        <br><br>
-        <p>Ya que se a creado el proyecto y un par de archivos nos dirigimos a "Git Bash" ubicandonos en la carpeta del proyecto dandole comienzo a nuestro control de versiones con <b>git init</b></p>
-    </div>
-    <div class="cont cont-init">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                Recursos
+            </div>
+            <div class="accordion-content">
+                <div class="cont cont-recursos">
+                    <h3>Recursos</h3>
+                    <p>Antes de comenzar a utilizar Git se necesitan los elementos básicos:</p>
+                    <ul class="list-elements">
+                        <li class="element">Tener instalada una versión estable de Git</li>
+                        <li class="element">Conocer la ubicación de la carpeta</li>
+                        <li class="element">Utilizar la terminal de Git Bash o la terminal normal</li>
+                        <li class="element"><b>En caso de usar Visual Studio Code, también se puede usar la terminal integrada</b></li>
+                    </ul>
+                    <p>Luego, debes crear una cuenta en GitHub para poder almacenar tus proyectos en la nube. En este proyecto, se busca comprender los estados de Git y cómo nos benefician.</p>
+                    <br>
+                    <img src="img/codigos/ubicacion.png" alt="Ubicación de la carpeta">
+                    <br><br>
+                    <p>Abre la carpeta de tu proyecto y crea los primeros archivos.</p>
+                    <br>
+                    <img src="img/codigos/archivos.png">
+                    <br><br>
+                    <p>Ya que se a creado el proyecto y un par de archivos nos dirigimos a "Git Bash" ubicandonos en la carpeta del proyecto dandole comienzo a nuestro control de versiones con <b>git init</b></p>
+                </div>
+            </div>    
+        </div>
+
         <a name="gitInit"></a>
-        <h3>git init</h3>
-        <div class="cont-cols-2">
-            <div class="cont-col-2">
-                <img src="img/codigos/git-init.png">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                git init
             </div>
-            <div class="cont-col-2">
-                <p>Ejecutanmos los siguientes codigos en nuestra terminal de <b>git bash</b></p>
-                <br>
-                <ul class="cont-terminal">
-                    <li>$ cd &#x3Cruta_de_proyecto&#x3E <samp>// Nos dirigimos en donde este nuestro proyecto</samp></li>
-                    <li>$ ls -l -a <samp>// Esto funciona para ver los archivos en modo de lista y muestra hasta los que no se pueden ver</samp></li>
-                    <li>$ git init <samp>// Iniciamos git</samp></li>
-                </ul>
-                <br>
-                <p>El comando "ls -l -a" lo usamos para ver los cambios que van surguiendo en nuestro proyecto</p>
-                <p>Con esto podemos ver como es nuestro archivo inicia con los servicios de <b>git</b> ya que se agrego una nueva carpeta en la cual se estaran almacenando las confirmaciones (commits) que vayamos realizando </p>
+            <div class="accordion-content">
+                <div class="cont cont-init">
+                    <h3>git init</h3>
+                    <div class="">
+                        <div class="">
+                            <center>
+                                <img src="img/codigos/git-init.png">
+                            </center>
+                        </div>
+                        <div class="">
+                            <p>Ejecuta los siguientes comandos en la terminal de Git Bash:</p>
+                            <ul class="cont-terminal">
+                                <li class="text-sintaxis">$ cd &#x3Cruta_de_proyecto&#x3E <samp>// Navega hasta la carpeta de tu proyecto</samp></li>
+                                <li class="text-sintaxis">$ ls -l -a <samp>// Muestra los archivos en modo de lista, incluyendo los ocultos</samp></li>
+                                <li class="text-sintaxis">$ git init <samp>// Inicializa Git en tu proyecto</samp></li>
+                            </ul>
+                            <p>El comando `ls -l -a` se utiliza para ver los cambios que van ocurriendo en tu proyecto. Verás que se crea una nueva carpeta oculta llamada `.git`, que almacenará las confirmaciones (commits) que realices en tu proyecto.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-    </div>
-    <div class="cont cont-status">
         <a name="gitStatus"></a>
-        <h3>git status</h3>
-        <div class="cont-cols-2">
-            <div class="cont-col-2">
-                <p>
-                    Este comando funciona para ver lo estados de los archivos ya que pueden ser modificados, agregados o eliminados
-                    en el momento ingresamos el comando la terminal nos algo asi como que la rama master no hay confirmaciones y probemos usando <b>git add &#x3C file &#x3E</b>
-                </p>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                git status
             </div>
-            <div class="cont-col-2">
-                <img src="img/codigos/git-status.png">
+            <div class="accordion-content" height="200px">
+                <div class="cont cont-status">
+                    <h3>git status</h3>
+                    <div class="cont-cols-2">
+                        <div class="cont-col-2">
+                            <p>
+                                Este comando funciona para ver lo estados de los archivos ya que pueden ser modificados, agregados o eliminados
+                                en el momento ingresamos el comando la terminal nos algo asi como que la rama master no hay confirmaciones y probemos usando <b>git add &#x3C file &#x3E</b>
+                            </p>
+                        </div>
+                        <div class="cont-col-2">
+                            <img src="img/codigos/git-status.png">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="cont cont-config">
+        <a name="gitEmail"></a>
+        <a name="gitName"></a>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                git config
+            </div>
+            <div class="accordion-content">
+                <div class="cont cont-config">
+                    <p>Primero veremos para solo el repositorio actual. Los siguientes comandos van de la mano ya que estos nos ayudan a saber quien fue el que creo la confirmacion <b>git config  user.email</b>  y <b> git config  user.name</b> (commit)</p>
+                    <div class="cont-cols-2">
+                            <p><b>Sintaxis:</b> git config --global user.email "correo_electronico"</p>    
+                            <br>            
+                            <p>Para configurar solo al repositorio actual en el que te encuentras puedes utilizar el siguiente comando para el correo, deja una imagen  <b>git config user.email </b></p>
         
-        <p>Primero veremos para solo el repositorio actual. Los siguientes comandos van de la mano ya que estos nos ayudan a saber quien fue el que creo la confirmacion <b>git config  user.email</b>  y <b> git config  user.name</b> (commit)</p>
-        <div class="cont-cols-2">
-            <a name="gitEmail"></a>
-            <p><b>Sintaxis:</b> git config --global user.email "correo_electronico"</p>    
-            <br>            
-            <p>Para configurar solo al repositorio actual en el que te encuentras puedes utilizar el siguiente comando para el correo, deja una imagen  <b>git config user.email </b></p>
-
-            <br>
-            <center><img src="img/codigos/Correo.png" height="60"  width="900"></center>
+                        <br>
+                            <center><img src="img/codigos/Correo.png" height="60"  width="900"></center>
+                        
+                    </div>
+        
+                    <div class="cont-cols-2">    
+                        <br>            
+                        <p>Para configurar solo al repositorio actual en el que te encuentras puedes utilizar el siguiente comando para el nombre, deja una imagen  <b>git config user.name </b></p>
+                        <br>
+                        <p><b>Sintaxis:</b> git config  user.name "tu nombre"</p>  
+                        <br>
+                        <center><img src="img/codigos/nombre.png" height="90"  width="900"></center>
+                        <br>
+                        <p>Abajo dejo un ejemplo de como se vería si utilizamos los comandos anteriores </p>
+                        <br>
+                        <center><img src="img/codigos/NC.png" height="650"  width="1000"></center>
+                    </div>    
+                </div>
+            </div>
         </div>
-
-        <div class="cont-cols-2">
-            <a name="gitName"></a>    
-            <br>            
-            <p>Para configurar solo al repositorio actual en el que te encuentras puedes utilizar el siguiente comando para el nombre, deja una imagen  <b>git config user.name </b></p>
-            <br>
-            <p><b>Sintaxis:</b> git config  user.name "tu nombre"</p>  
-            <br>
-            <center><img src="img/codigos/nombre.png" height="90"  width="900"></center>
-            <br>
-            <p>Abajo dejo un ejemplo de como se vería si utilizamos los comandos anteriores </p>
-            <br>
-            <center><img src="img/codigos/NC.png" height="650"  width="1000"></center>
-        </div>
-    </div>
-    <div class="cont cont-config">
+        
         <a name="gitEmail2"></a>
-       
-        <p>Para  que el reposotorio creado siempre tengo el nombre y correo de la persona dueña del dispositivo basta con configurar con los siguientes comandos <b>git config --global user.email</b>  y <b> git config --global user.name</b>  (commit)</p>
-        <div class="cont-cols-2">
-                <p><b>Sintaxis:</b> git config --global user.email "correo_electronico"</p>    
-                <br>            
-                <p>Para configurar solo al repositorio actual en el que te encuentras puedes utilizar el siguiente comando para el correo, deja una imagen  <b>git config user.email </b></p>
-
-            <br>
-                <center><img src="img/codigos/Correo2.png" height="60"  width="900"></center>
-            
+        <a name="gitName2"></a>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                git config
+            </div>
+            <div class="accordion-content">
+                <div class="cont cont-config">
+                
+                    <p>Para  que el reposotorio creado siempre tengo el nombre y correo de la persona dueña del dispositivo basta con configurar con los siguientes comandos <b>git config --global user.email</b>  y <b> git config --global user.name</b>  (commit)</p>
+                    <div class="cont-cols-2">
+                        <p><b>Sintaxis:</b> git config --global user.email "correo_electronico"</p>    
+                        <br>            
+                        <p>Para configurar solo al repositorio actual en el que te encuentras puedes utilizar el siguiente comando para el correo, deja una imagen  <b>git config user.email </b></p>
+        
+                        <br>
+                        <center><img src="img/codigos/Correo2.png" height="60"  width="900"></center>
+                    </div>
+        
+        
+                    <div class="cont-cols-2">
+                            
+                            <br>            
+                            <p>Para configurar solo al repositorio actual en el que te encuentras puedes utilizar el siguiente comando para el nombre, deja una imagen  <b>git config user.name </b></p>
+                            <br>
+                            <p><b>Sintaxis:</b> git config  user.name "tu nombre"</p>  
+                            <br>
+                            <center><img src="img/codigos/Nombre2.png" height="90"  width="900"></center>
+                    
+                    </div>    
+                </div>
+            </div>
         </div>
 
-        <div class="cont-cols-2">
-            <a name="gitName2"></a>
-                
-                <br>            
-                <p>Para configurar solo al repositorio actual en el que te encuentras puedes utilizar el siguiente comando para el nombre, deja una imagen  <b>git config user.name </b></p>
-                <br>
-                <p><b>Sintaxis:</b> git config  user.name "tu nombre"</p>  
-                <br>
-                <center><img src="img/codigos/Nombre2.png" height="90"  width="900"></center>
-           
-        </div>    
-        
-    </div>
-
-    <div class="cont cont-commit">
         <a name="gitCommit"></a>
-        <h3>git commit</h3>
-        <p>El comando  <b> git commit</b>  se utiliza para guardar los cambios realizados en los archivos en un repositorio de Git si no le escribes<b> -m </b>cuando le des enter Git abrirá un editor de texto por defecto. </p>
-        <br>
-        <ul class="cont-terminal">
-            <li id="texto">$ git commit -m   &quot; Mensaje del commit  &quot; <samp>// En el mensaje es muy importante describir los cambios realizaods del código </samp></li>
-        </ul>
-        <br>
-        <p>El código completo quedaría de la siguiente manera</p>
-        <br> 
-        <center><img src="img/codigos/commit.png" height="220"  width="900"></center>
-    
-    </div>
-    <div class="cont cont-restone">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                git commit
+            </div>
+            <div class="accordion-content">
+                <div class="cont cont-commit">
+                    <h3>git commit</h3>
+                    <p>El comando  <b> git commit</b>  se utiliza para guardar los cambios realizados en los archivos en un repositorio de Git si no le escribes<b> -m </b>cuando le des enter Git abrirá un editor de texto por defecto. </p>
+                    <br>
+                    <ul class="cont-terminal">
+                        <li id="texto">$ git commit -m   &quot; Mensaje del commit  &quot; <samp>// En el mensaje es muy importante describir los cambios realizaods del código </samp></li>
+                    </ul>
+                    <br>
+                    <p>El código completo quedaría de la siguiente manera</p>
+                    <br> 
+                    <center><img src="img/codigos/commit.png" height="220"  width="900"></center>
+                </div>
+            </div>
+        </div>
+
         <a name="gitLog"></a>
-        <h3>git log</h3>
-        <br>
-        <p>EL comando<b> Git log </b> muestra el historial de commits del repositorio, lo que incluye información como el autor del commit, la fecha y hora, y el mensaje.</p>
-        <br>
-        <ul class="cont-terminal">
-            <li id="texto" ><b> Sintaxis:</b> <samp> git log</samp></li>
-        </ul>
-        <br>
-        <center><img src="img/codigos/commitC.png" height="200"  width="800"></center>
-        <br>
-    </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                git log
+            </div>
+            <div class="accordion-content">
+                <div class="cont cont-log">
+                    <h3>git log</h3>
+                    <br>
+                    <p>EL comando<b> Git log </b> muestra el historial de commits del repositorio, lo que incluye información como el autor del commit, la fecha y hora, y el mensaje.</p>
+                    <br>
+                    <ul class="cont-terminal">
+                        <li id="texto" ><b> Sintaxis:</b> <samp> git log</samp></li>
+                    </ul>
+                    <br>
+                    <center><img src="img/codigos/commitC.png" height="200"  width="800"></center>
+                    <br>
+                </div>
+            </div>
+        </div>
 
-    <div class="cont cont-diff">
         <a name="gitDiff"></a>
-        <h3>git diff</h3>
-        <br>
-        <p>Se utiliza para mostrar las diferencias entre los cambios realizados en los archivos sin confirmar (en el área de preparación) y la versión más reciente confirmada (HEAD) en un repositorio de Git. </p>
-        <br>
-        <ul class="cont-terminal">
-            <li id="texto" ><b> Sintaxis:</b> git diff</samp></li>
-        </ul>
-        <br>
-        <center><img src="img/codigos/diff.png" ></center>
-        <br>
-        <p>Color verde: resalta las líneas que se han agregado o modificado en los archivos desde la última confirmación. Estas líneas representan los cambios que aún no se han confirmado y se encuentran en el área de preparación (staging area).
-        <br>
-        <p>Color rojo: resalta las líneas que han sido eliminadas o modificadas en los archivos desde la última confirmación. Estas líneas indican las partes del código que se han eliminado o modificado desde la versión confirmada anteriormente y aún no se han confirmado.</p>
-        </p>
-    </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                git diff
+            </div>
+            <div class="accordion-content">
+                <div class="cont cont-diff">
+                    <h3>git diff</h3>
+                    <br>
+                    <p>Se utiliza para mostrar las diferencias entre los cambios realizados en los archivos sin confirmar (en el área de preparación) y la versión más reciente confirmada (HEAD) en un repositorio de Git. </p>
+                    <br>
+                    <ul class="cont-terminal">
+                        <li id="texto" ><b> Sintaxis:</b> git diff</samp></li>
+                    </ul>
+                    <br>
+                    <center><img src="img/codigos/diff.png" ></center>
+                    <br>
+                    <p>Color verde: resalta las líneas que se han agregado o modificado en los archivos desde la última confirmación. Estas líneas representan los cambios que aún no se han confirmado y se encuentran en el área de preparación (staging area).
+                    <br>
+                    <p>Color rojo: resalta las líneas que han sido eliminadas o modificadas en los archivos desde la última confirmación. Estas líneas indican las partes del código que se han eliminado o modificado desde la versión confirmada anteriormente y aún no se han confirmado.</p>
+                    </p>
+                </div>
+            </div>
+        </div>
 
-    <div class="cont cont-branch">
         <a name="gitBranch"></a>
-        <h3>git branch</h3>
-        <br>
-        <p>El comando <b>git branch</b>  se utiliza en Git para administrar las ramas de desarrollo en un repositorio. Permite crear nuevas ramas, listar las ramas existentes, cambiar entre ramas y eliminar ramas.</p>
-    
-
-        <ul class="cont-terminal1">
-            <li id="texto" ><b>Sintaxis: </b> git branch &lt;nombre-rama	&gt;  <samp> //Con este comando creas una nueva rama </samp></li>
-            
-        </ul>
-        <div class="cont-img">
-            <img src="img/codigos/git branchC.png">
-        </div>
-        <br>
-        <br>
-        <ul class="cont-terminal1">
-            <li id="texto" ><b>Sintaxis: </b> 	 git branch   <samp> //Enlistar las ramas existentes en tu repositorio local </samp></li>
-            
-        </ul>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                git branch
+            </div>
+            <div class="accordion-content">
+                <div class="cont cont-branch">
+                    <h3>git branch</h3>
+                    <br>
+                    <p>El comando <b>git branch</b>  se utiliza en Git para administrar las ramas de desarrollo en un repositorio. Permite crear nuevas ramas, listar las ramas existentes, cambiar entre ramas y eliminar ramas.</p>
         
-        <div class="cont-img">
-            <img src="img/codigos/git branch.png">
+        
+                    <ul class="cont-terminal1">
+                        <li id="texto" ><b>Sintaxis: </b> git branch &lt;nombre-rama	&gt;  <samp> //Con este comando creas una nueva rama </samp></li>
+                        
+                    </ul>
+                    <div class="cont-img">
+                        <img src="img/codigos/git branchC.png">
+                    </div>
+                    <br>
+                    <br>
+                    <ul class="cont-terminal1">
+                        <li id="texto" ><b>Sintaxis: </b> 	 git branch   <samp> //Enlistar las ramas existentes en tu repositorio local </samp></li>
+                        
+                    </ul>
+                    
+                    <div class="cont-img">
+                        <img src="img/codigos/git branch.png">
+                    </div>
+                    <br>
+                    <ul class="cont-terminal1">
+                        <li id="texto" ><b>Sintaxis: </b>git branch -d &lt;nombre-rama	&gt;   <samp> //eliminas la rama existente en tu repositorio local </samp></li>
+                        
+                    </ul>
+                    <div class="cont-img">
+                        <img src="img/codigos/git branchE.png">
+                    </div>
+                    <br>
+                </div>
+            </div>
         </div>
-        <br>
-        <ul class="cont-terminal1">
-            <li id="texto" ><b>Sintaxis: </b>git branch -d &lt;nombre-rama	&gt;   <samp> //eliminas la rama existente en tu repositorio local </samp></li>
-            
-        </ul>
-        <div class="cont-img">
-            <img src="img/codigos/git branchE.png">
+
+        <a name="gitClone"></a>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                git clone
+            </div>
+            <div class="accordion-content">
+                <div class="cont cont-clone">
+                    <h3>git clone</h3>
+                    <p>Se usa para hacer una copia de tu proyecto y el historial de los commits que se hayan creado en su ciclo de desarrollo, esta copia de tu proyecto se queda en tu máquina (de modo que solo es local). 
+                    <br>
+                    Ahora nos pasamos a la terminal de git para ver la función de este comando</p>
+                    <p class="text-nota">
+                    nota: para tener el proyecto clonado debemos ubicarnos en la carpeta donde se desea clonar <br>
+                    $ cd /ruta/al/directorio <br>
+                    Ya que nos ubicamos en el repositorio clonamos nuestro repositorio pasamos a usar el comando
+                    <br>
+                    </p>
+                    <br>
+                    <p>
+                    Sintaxis: <br>
+                    <p class="text-sintax">
+                        $ git clone &lt;URL_repositorio_remoto&gt;
+                    </p>
+
+                    (La URL la obtenemos estando en GitHub en el proyecto que se desea clonar y te ubicas en el apartado “&lt; 	&gt; code ”, copiando la url de proyecto asegúrate de que estés en el apartado HTTPS). </p>
+                    <br>
+                    <div class="cont-cols-2">
+                        <div class="cont-col-2">
+                            <center>
+                                <img src="img/codigos/git-clone.png">
+                            </center>
+                        </div>
+                        <div class="cont-col-2">
+                            <center>
+                                <img src="img/codigos/archivos-git-clone.png">
+                            </center>
+                        </div>
+                        <br><br>
+                        <p>Gráficamente o accediendo desde los archivos de tu máquina se ven de la siguiente manera, tomando en cuenta que es windows el sistema operativo que se está usando.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <br>
-    </div>
-    <div class="cont cont-clone">
-        <a name="gitResotore">
-            <h3>git restore</h3>
-        </a>
-    </div>
-    
-    <div class="cont cont-fech">
-        <a name="gitFech">
-            <h3>git fech</h3>
-        </a>
-    </div>
-    
-    <div class="cont cont-merge">
-        <a name="gitMerge">
-            <h3>git merge</h3>
-        </a>
-    </div>
-    <div class="cont cont-rm">
+
+        <a name="gitRestore"></a>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                git restore
+            </div>
+            <div class="accordion-content">
+                <div class="cont cont-restore">
+                    <h3>git restore</h3>
+                    <p>
+                        Ahora probemos el comando “git restore” este se utiliza para descartar cambios en archivos que no hayan sido preparados osea que no estén el área de preparación (staging area).
+                    </p>
+                    <br>
+                    <p>
+                        Sintaxis que puede tener el comando git restore: 
+                        Con el siguiente comando podemos deshacer los cambios que hayamos echo en nuestro archivo 
+                    </p>
+                    <br>
+                    <p class="text-sintax">
+                        $ git restore &lt;archivo&gt;
+                    </p>
+                    <br>
+                    <p>Te mostraré un ejemplo de lo que puede hacer este comando:</p>
+                    <br>
+                    <center>
+                        <img src="img/codigos/git-restone-.png">
+                    </center>
+                    <p>
+                        Como podemos ver, tenemos los estados de los archivos que modificamos y estos mismos no están preparados recordemos bien eso, en el caso del archivo <b>"estilos.css"</b> vamos a restablecerlo a cuando no estaba preparado.
+                    </p>
+                    <center>
+                        <img src="img/codigos/git-restone-.png">
+                    </center>
+                    <br>
+                    <p>Como vemos se deshicieron los cambios.</p>
+                    <br>
+                    <p>Ahora supongamos que por error preparaste tu(s) archivo(s) entonces puedes usar este comando para que ya no esté preparado(s), por así decirlo.</p>
+                    <br>
+                    <p class="text-sintax">
+                        $ git restore --staged &lt;archivo&gt;
+                    </p>
+                    <br>
+                    <center>
+                        <img src="img/codigos/git-restone--staged.png">
+                    </center>
+                    <br>
+                    <p>
+                        Como vemos los archivos ya no están preparados y volvemos a estar en el estado inicial (de modificación). Ahora ya puedes usar el comando <b>“git restore &lt;archivo&gt;”</b> para deshacer los cambios que creas convenientes. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <a name="gitFech"></a>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                git fetch
+            </div>
+            <div class="accordion-content">
+                <div class="cont cont-fetch">
+                    <h3>git fech</h3>
+                    <p>Descargar los últimos cambios del repositorio remoto sin fusionarlos automáticamente con tu rama local actual</p>
+                    <p>Git se conecta al repositorio remoto y descarga todos los cambios nuevos que aún no están en tu repositorio local. Esto incluye nuevos commits, ramas y etiquetas que se hayan agregado al repositorio remoto. </p>
+                    <p>Sintaxis: </p>
+                    <div class="text-sintax">
+                        $ git fetch 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a name="gitMerge"></a>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                git merge
+            </div>
+            <div class="accordion-content">
+                <div class="cont cont-merge">
+                    <h3>git merge</h3>
+                    <p>
+                        El como funciona este comando es interesante ya que combina una rama con la otra. Por lo que leido, es que se utiliza para incorporar los cambios de una rama secundaria (como una rama de características o una rama de desarrollo) en una rama principal (como la rama "master").
+                    </p>
+                    <p class="text-sintax">
+                        $ git merge &lt;nombre_rama&lt;
+                    </p>
+                    <center>
+                        <img src="img/codigos/git-merge.png">
+                    </center>
+                    <p>Como podemos ver el codigo a sido actulizado</p>
+                </div>
+            </div>
+        </div>
+
         <a name="gitRm"></a>
-        <h3>git rm</h3>
-
-        <p>Se utiliza para eliminar archivos del repositorio y del sistema de archivos local al mismo tiempo. Aspi que ten mucho cuidado antes de eliminar un archivo</p>
-    
-        <ul class="cont-terminal1">
-            <li id="texto1" ><b>Sintaxis: </b> 	 git rm &lt;nombre del archivo	&gt;   <samp> //Elimina los archivos existentes en tu repositorio local </samp></li>
-            
-        </ul>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                git rm
+            </div>
+            <div class="accordion-content">
+                <div class="cont cont-rm">
+                    <h3>git rm</h3>
         
-        <div class="cont-img">
-            <img src="img/codigos/git rm.png">
-        </div>
-        <br>
-        <p >Un dato muy interesante una vez utilizado el comnado git rm necesario agregar un commit en el repositorio </p>
-        <br>
-        <center><img src="img/codigos/git commitRM.png"> </center>            
-        <br>
-
-        <ul class="cont-terminal1">
-            <li id="texto1" ><b>Sintaxis: </b> 	 git rm  &lt;nombre del archivo 1&gt;  &lt;nombre del archivo 2&gt;  <samp> //Elimina los archivos existentes en tu repositorio local </samp></li>
-        </ul>
-        <div class="cont-img2">
-            <img src="img/codigos/git  rm2.png">
-        </div>
-        <br>
-    </div>
-    
-    <div class="cont cont-switch">
-        <a name="gitSwitch"></a>
-        <h3>git switch</h3>
-        <p>Se utiliza en Git para cambiar entre ramas o crear y cambiar a una nueva rama en un repositorio</p>
-    
-    
-        <br>
-        <ul class="cont-terminal1">
-            <li id="texto1" ><b>Sintaxis: </b> 	 git switch -c &lt;nombre rama&gt;  <samp> //Crea una nueva rama  en tu repositorio local  </samp></li>
-            
-        </ul>
-        
-        
-        <div class="cont-img2">
-            <img src="img/codigos/git switch.png">
-        </div>
-        <br>
-    
-        <br>
-        <ul class="cont-terminal1">
-            <li id="texto1" ><b>Sintaxis: </b> 	 git switch  &lt;nombre rama&gt;  <samp> //Cambia a una rama existente en tu repositorio local  </samp></li>
-            
-        </ul>
-        
-        
-        <div class="cont-img2">
-            <img src="img/codigos/git switch2.png">
-        </div>
-        <br>
-    </div>
-    <div class="cont cont-remote">
-        <a name="gitRemote"></a>
-        <h3>git remote</h3>
-        <p>
-            Para agregar un nuevo repositorio remoto a tu repositorio local 
-        </p>
-
-        <br>
-        <center>            
-            <ul class="cont-terminal1">
-                <li id="texto1" ><b>Sintaxis: </b> git remote add <nombre-remoto> &lt;URL-repositorio-remoto &gt; &lt;// URL-repositorio-remoto&gt;  
-                <samp> //creas un repositorio remoto , para eso ya tienes que tener una cuenta GitHub. Dejo la dirección por si no tienes cuenta github.com</samp></li>
-            </ul>
-        </center>
-        <br> 
-        <center> <img src="img/codigos/remoto.png"></center>
-        <br>
-    </div>
-    <div class="cont cont-push">
-        <a name="gitPush"></a>
-        <h3>git push</h3>
-        <p>utilizado en Git para enviar tus cambios locales a un repositorio remoto. Este comando se utiliza normalmente después de realizar cambios en tu repositorio local y deseas actualizar el repositorio remoto con tus cambios.
-        </p>
-
-        <center> 
-            <ul class="cont-terminal1">
-            <li id="texto1" ><b>Sintaxis: </b> git push &lt;nombre-remoto &gt; &lt;nombre-rama &gt; <samp> //Donde &lt; nombre-remoto &gt; es el nombre del repositorio remoto al que deseas enviar tus cambios, y &lt; nombre-rama &gt; es el nombre de la rama en la que deseas realizar el push.</samp></li>
-        
-            </ul>
-        </center>
-        <br> 
-            <center> <img src="img/codigos/git push.png"> </center>
-        <br>
-    </div>
-
-    <div class="cont cont-pull">
-        <a name="gitPull"> </a>
-        <h3>git pull</h3>
-        <p>
-            se utiliza en Git para recuperar los cambios más recientes desde un repositorio remoto y
-            fusionarlos con la rama actual en tu repositorio local.
-        </p>
-
-        <ul class="cont-terminal1">
-            <li id="texto1" ><b>Sintaxis: </b> git pull &lt; nombre-remoto &gt; &lt;nombre-rama &gt;
+                    <p>Se utiliza para eliminar archivos del repositorio y del sistema de archivos local al mismo tiempo. Aspi que ten mucho cuidado antes de eliminar un archivo</p>
                 
-                <samp> //Donde &lt;nombre-remoto &gt; es el nombre del repositorio remoto desde el cual deseas obtener los cambios, y &lt; nombre-rama&gt;  es el nombre de la rama remota que deseas fusionar con la rama actual en tu repositorio local. </samp></li>
-            
-        </ul>
+                    <ul class="cont-terminal1">
+                        <li id="texto1" ><b>Sintaxis: </b> 	 git rm &lt;nombre del archivo	&gt;   <samp> //Elimina los archivos existentes en tu repositorio local </samp></li>
+                        
+                    </ul>
+                    
+                    <div class="cont-img">
+                        <img src="img/codigos/git rm.png">
+                    </div>
+                    <br>
+                    <p >Un dato muy interesante una vez utilizado el comnado git rm necesario agregar un commit en el repositorio </p>
+                    <br>
+                    <center><img src="img/codigos/git commitRM.png"> </center>            
+                    <br>
+        
+                    <ul class="cont-terminal1">
+                        <li id="texto1" ><b>Sintaxis: </b> 	 git rm  &lt;nombre del archivo 1&gt;  &lt;nombre del archivo 2&gt;  <samp> //Elimina los archivos existentes en tu repositorio local </samp></li>
+                    </ul>
+                    <div class="cont-img2">
+                        <img src="img/codigos/git  rm2.png">
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
 
-        <div class="cont-img3">
-            <img src="img/codigos/git pull.png">
+        <a name="gitSwitch"></a>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                git switch
+            </div>
+            <div class="accordion-content">
+                <div class="cont cont-switch">
+                    <h3>git switch</h3>
+                    <p>Se utiliza en Git para cambiar entre ramas o crear y cambiar a una nueva rama en un repositorio</p>
+                    <br>
+                    <ul class="cont-terminal1">
+                        <li id="texto1" ><b>Sintaxis: </b> 	 git switch -c &lt;nombre rama&gt;  <samp> //Crea una nueva rama  en tu repositorio local  </samp></li>
+                        
+                    </ul>
+                    <div class="cont-img2">
+                        <img src="img/codigos/git switch.png">
+                    </div>
+                    <br>
+                
+                    <br>
+                    <ul class="cont-terminal1">
+                        <li id="texto1" ><b>Sintaxis: </b> 	 git switch  &lt;nombre rama&gt;  <samp> //Cambia a una rama existente en tu repositorio local  </samp></li>
+                        
+                    </ul>
+                    
+                    
+                    <div class="cont-img2">
+                        <img src="img/codigos/git switch2.png">
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <a name="gitRemote"></a>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                git remote
+            </div>
+            <div class="accordion-content">
+                <div class="cont cont-remote">
+                    <h3>git remote</h3>
+                    <p>
+                        Para agregar un nuevo repositorio remoto a tu repositorio local 
+                    </p>
+        
+                    <br>
+                    <center>            
+                        <ul class="cont-terminal1">
+                            <li id="texto1" ><b>Sintaxis: </b> git remote add <nombre-remoto> &lt;URL-repositorio-remoto &gt; &lt;// URL-repositorio-remoto&gt;  
+                            <samp> //creas un repositorio remoto , para eso ya tienes que tener una cuenta GitHub. Dejo la dirección por si no tienes cuenta github.com</samp></li>
+                        </ul>
+                    </center>
+                    <br> 
+                    <center> <img src="img/codigos/remoto.png"></center>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <a name="gitPush"></a>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                git push 
+            </div>
+            <div class="accordion-content">
+                <div class="cont cont-push">
+                    <h3>git push</h3>
+                    <p>utilizado en Git para enviar tus cambios locales a un repositorio remoto. Este comando se utiliza normalmente después de realizar cambios en tu repositorio local y deseas actualizar el repositorio remoto con tus cambios.
+                    </p>
+        
+                    <center> 
+                        <ul class="cont-terminal1">
+                        <li id="texto1" ><b>Sintaxis: </b> git push &lt;nombre-remoto &gt; &lt;nombre-rama &gt; <samp> //Donde &lt; nombre-remoto &gt; es el nombre del repositorio remoto al que deseas enviar tus cambios, y &lt; nombre-rama &gt; es el nombre de la rama en la que deseas realizar el push.</samp></li>
+                    
+                        </ul>
+                    </center>
+                    <br> 
+                        <center> <img src="img/codigos/git push.png"> </center>
+                    <br>
+                </div>
+            </div>
+        </div>
+        
+        <a name="gitPull"> </a>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                git pull
+            </div>
+            <div class="accordion-content">
+                <div class="cont cont-pull">
+                    <h3>git pull</h3>
+                    <p>
+                        se utiliza en Git para recuperar los cambios más recientes desde un repositorio remoto y
+                        fusionarlos con la rama actual en tu repositorio local.
+                    </p>
+        
+                    <ul class="cont-terminal1">
+                        <li id="texto1" ><b>Sintaxis: </b> git pull &lt; nombre-remoto &gt; &lt;nombre-rama &gt;
+                            
+                            <samp> //Donde &lt;nombre-remoto &gt; es el nombre del repositorio remoto desde el cual deseas obtener los cambios, y &lt; nombre-rama&gt;  es el nombre de la rama remota que deseas fusionar con la rama actual en tu repositorio local. </samp></li>
+                        
+                    </ul>
+        
+                    <div class="cont-img3">
+                        <img src="img/codigos/git pull.png">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+<script src="js/acordion.js"></script>
+<script>
+    function toggleAccordion(contentId) {
+        const accordionContent = document.getElementById(contentId);
+        accordionContent.style.display = accordionContent.style.display === "block" ? "none" : "block";
+    }
+</script>
 </body>
 </html>
