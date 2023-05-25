@@ -4,14 +4,103 @@
   clear: both;
 }
   
-.accordion-header {
+.accordion-header 
+{
   background-color: #eee;
   padding: 10px;
   cursor: pointer;
 }
   
-.accordion-content {
+.accordion-content
+ {
   padding: 10px;
   display: none;
   clear: both;
+}
+
+/*manipula el tamaño de la imagen 1*/
+.contenedor-imagen {
+  position: relative;
+  display: inline-block;
+}
+
+.contenedor-imagen img {
+  transition: transform 0.3s ease;
+}
+
+.contenedor-imagen:hover img {
+  transform: scale(1.5) translateX(100px);
+ 
+}
+/*manipula el tamaño de la imagen 2 los posiciona  a la derecha*/
+.contenedor-imagen2 {
+  position: relative;
+  display: inline-block;
+}
+
+.contenedor-imagen2 img {
+  transition: transform 0.3s ease;
+}
+
+.contenedor-imagen2:hover img {
+  transform: scale(1.1) translateX(-20px);
+  
+ 
+}
+
+/*imagen git status manipulada*/
+.cont-col-3
+{
+
+  
+
+  float: right;
+
+  margin-top:-200px;
+
+
+}
+/*manipulación del acordión en git status*/
+.cont-col-2  #parrafo
+{  
+ float: left;
+ width: 350px;
+}
+/*manipulación del tamaño en git clone*/
+.contenedor-imagen3 img {
+  transition: transform 0.3s ease;
+}
+.contenedor-imagen3:hover img {
+  transform: scale(1.5) translateX(20px);
+  
+ 
+}                        
+/*editamos el posicionamiento de la imagen  llamado switch  y switch2 */
+
+#cont-img3
+{
+
+float: right;
+margin-top: -90px;
+}
+
+#cont-img4
+{
+ float: right;
+ margin-top:-110px;
+ left:200px;
+}
+
+/*justifico el parrafo de push*/
+#texto1
+{
+ text-align: justify;
+}
+
+/*manipulo la imagen llamdo git pull */
+#cont-img5
+{
+  margin-top:-15%;
+  float: right;
+
 }
